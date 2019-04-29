@@ -1,0 +1,37 @@
+<resources>
+    <!-- Launch Screen -->
+    <string name="app_name">Partyer</string>
+    <string name="partier_logo">partier logo</string>
+    <string name="app_description">Tinder but for parties</string>
+
+    <!-- Main Screen -->
+    <string name="find_parties_title">Get Your Party On!</string>
+    <string name="no_rvsp_label">Nah</string>
+    <string name="yes_rsvp_label">Yeet!</string>
+    <string name="calendar_settings_button_label">Calendar Settings</string>
+    <string name="party_list_button_label">See Your Parties</string>
+    <string name="date_template">1$s%, 1$s% 1$s% at 1$s% 1$s%</string>
+    <string name="end_of_parties_title">No More Events!</string>
+    <string name="end_of_parties_description">Aw Snap! You\'ve checked out all the events in your area.</string>
+
+    <!-- Calendar Prompt Screen -->
+    <string name="calendar_icon_description">Icon for calendar permissions</string>
+    <string name="calendar_title">Calendar Permissions</string>
+    <string name="calendar_permission_description">Let us update your calendar with the events you want to go to!</string>
+    <string name="accept_permissions">Grant Calendar Access</string>
+    <string name="decline_permissions">Not Right Now</string>
+
+    <!-- Calendar Settings Screen -->
+    <string name="calendar_settings_title">Calendar Settings</string>
+    <string name="calendar_sync_account">Calendar Being Used:</string>
+    <string name="calendar_toggle_label">Calendar Sync</string>
+
+    <!-- Party List Screen -->
+    <string name="party_list_title">Upcoming Parties</string>
+    <string name="party_list_description">Manage Parties Here</string>
+    <string name="empty_party_list_title">You have no parties at this time</string>
+    <string name="empty_party_list_description">Go back to the main page and start looking through the different
+        parties!
+    </string>
+    <string name="remove_button_label">X</string>
+</resources>

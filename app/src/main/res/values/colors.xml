@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mainTitleColor">#d65a8a</color>
+    <color name="secondaryTitleColor">#40bfe6</color>
+    <color name="background_gray_start">#333333</color>
+    <color name="background_gray_end">#434343</color>
+    <color name="cardBackgroundColor">#eeeeee</color>
+    <color name="negativeColor">#d64541</color>
+    <color name="positiveColor">#2ecc71</color>
+</resources>

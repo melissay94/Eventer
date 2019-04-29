@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/secondaryTitleColor</item>
+        <item name="colorAccent">@color/mainTitleColor</item>
+        <item name="android:windowBackground">@drawable/gray_gradient</item>
+    </style>
+
+    <style name="ScreenMainTitle">
+        <item name="android:layout_marginTop">32dp</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/secondaryTitleColor</item>
+    </style>
+
+    <style name="Description">
+        <item name="android:textColor">@color/cardBackgroundColor</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+</resources>

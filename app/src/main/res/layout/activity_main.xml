@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <TextView
+        style="@style/ScreenMainTitle"
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/find_parties_title"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/calendar_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calendar_settings_button_label"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@id/party_info_card"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintEnd_toEndOf="@id/party_list"
+        app:layout_constraintStart_toStartOf="@id/party_info_card"
+        app:layout_constraintHorizontal_bias="0"/>
+
+    <Button
+        android:id="@+id/party_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/party_list_button_label"
+        app:layout_constraintTop_toTopOf="@id/calendar_setting"
+        app:layout_constraintBottom_toBottomOf="@id/calendar_setting"
+        app:layout_constraintEnd_toEndOf="@id/party_info_card"
+        app:layout_constraintStart_toEndOf="@id/calendar_setting"
+        app:layout_constraintHorizontal_bias="1"/>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/party_info_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="48dp"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        app:cardBackgroundColor="@color/cardBackgroundColor"
+        app:cardCornerRadius="20dp"
+        app:cardPreventCornerOverlap="false"
+        app:layout_constraintTop_toBottomOf="@id/calendar_setting"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/card_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                tools:text="ED'S BIRTHDAY BASH"/>
+
+            <TextView
+                android:id="@+id/card_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginTop="12dp"
+                tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu posuere ante. Integer consectetur nisi mauris, at molestie arcu rhoncus sed. Cras sem dolor, mattis nec hendrerit sed, scelerisque ac magna. Proin velit metus, consectetur vitae efficitur quis, vehicula mattis lorem. Aliquam nisi tellus, facilisis in hendrerit luctus, scelerisque a diam."/>
+
+            <TextView
+                android:id="@+id/card_start_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginTop="20dp"
+                android:textSize="12sp"
+                tools:text="Starts: Wednesday July 14th"/>
+
+            <TextView
+                android:id="@+id/card_end_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="12dp"
+                android:textSize="12sp"
+                tools:text="Ends: Wednesday July 14th"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/no_rsvp_button"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@color/negativeColor"
+        android:text="@string/no_rvsp_label"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textSize="24sp"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="@id/party_info_card"
+        app:layout_constraintTop_toBottomOf="@id/party_info_card"/>
+
+    <Button
+        android:id="@+id/yes_rsvp_button"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@color/positiveColor"
+        android:text="@string/yes_rsvp_label"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textSize="24sp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="@id/party_info_card"
+        app:layout_constraintTop_toBottomOf="@id/party_info_card"/>
+</android.support.constraint.ConstraintLayout>
